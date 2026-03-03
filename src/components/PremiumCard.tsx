@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 export function PremiumCard() {
   return (
     <motion.div
-      className="flex flex-col items-start justify-between gap-4 rounded-xl bg-slate-50 px-4 py-4 sm:flex-row sm:px-6"
+      className="flex items-center justify-between gap-4 rounded-xl bg-slate-50 px-4 py-4 sm:px-6"
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.25, ease: 'easeOut' }}
