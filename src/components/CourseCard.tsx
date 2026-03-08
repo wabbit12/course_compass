@@ -151,16 +151,16 @@ export function CourseCard({ course }: CourseCardProps) {
         <p className="text-sm text-slate-900">By {course.creator}</p>
       </div>
 
-      {/* Duration */}
-      <div className="flex shrink-0 items-center gap-1.5 text-xs text-slate-900 lg:text-sm">
-        <ClockIcon size={18} weight="fill" color="#0f172a" />
-        <span>{course.duration}</span>
-      </div>
-
-      {/* Rating */}
-      <div className="flex shrink-0 items-center gap-1.5 text-xs text-slate-900 lg:text-sm">
-        <FireIcon size={18} weight="fill" color="#0f172a" />
-        <span>{course.rating}</span>
+      {/* Duration & Rating - stack on mobile for more title space */}
+      <div className="flex shrink-0 flex-col gap-0.5 lg:flex-row lg:items-center lg:gap-4">
+        <div className="flex items-center gap-1.5 text-xs text-slate-900 lg:text-sm">
+          <ClockIcon size={18} weight="fill" color="#0f172a" />
+          <span>{course.duration}</span>
+        </div>
+        <div className="flex items-center gap-1.5 text-xs text-slate-900 lg:text-sm">
+          <FireIcon size={18} weight="fill" color="#0f172a" />
+          <span>{course.rating}</span>
+        </div>
       </div>
 
       {/* View Course button */}
