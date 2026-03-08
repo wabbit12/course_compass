@@ -151,8 +151,8 @@ export function CourseCard({ course }: CourseCardProps) {
         <p className="text-sm text-slate-900">By {course.creator}</p>
       </div>
 
-      {/* Duration & Rating - stack on mobile for more title space */}
-      <div className="flex shrink-0 flex-col gap-0.5 lg:flex-row lg:items-center lg:gap-4">
+      {/* Duration & Rating - stack on mobile only (not tablets) for more title space */}
+      <div className="flex shrink-0 flex-col gap-0.5 md:flex-row md:items-center md:gap-4">
         <div className="flex items-center gap-1.5 text-xs text-slate-900 lg:text-sm">
           <ClockIcon size={18} weight="fill" color="#0f172a" />
           <span>{course.duration}</span>
